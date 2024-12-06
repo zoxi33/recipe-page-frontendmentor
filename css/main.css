@@ -1,0 +1,122 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "CustomFont"; /* Name your font family */
+  src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf"); /* Locate the .ttf file within your directory*/
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: "CustomFont";
+  background-color: hsl(30, 54%, 90%);
+}
+
+hr {
+  height: 1px;
+  opacity: 25%;
+  background-color: hsl(30, 54%, 90%);
+}
+
+.box {
+  width: 760px;
+  border-radius: 12px;
+  padding: 2.7em;
+  background-color: hsl(0, 0%, 100%);
+}
+.box .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box .top h1 {
+  font-size: 2.3rem;
+  margin: 1em 0 0.7em;
+  align-self: flex-start;
+}
+.box .top p {
+  margin: 0 0 4em;
+}
+.box .top img {
+  border-radius: 12px;
+  width: 100%;
+}
+.box .prep-time {
+  margin: 0 2em 2.5em;
+}
+.box .prep-time h3 {
+  color: hsl(332, 51%, 32%);
+}
+.box .prep-time ul {
+  padding: 1em;
+}
+.box .prep-time ul li {
+  padding: 0.5em;
+}
+.box .prep-time ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.box .bottom {
+  padding: 0 0.3em 0;
+}
+.box .bottom ul {
+  padding: 1em;
+}
+.box .bottom ul li {
+  padding: 0.5em;
+}
+.box .bottom ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+.box .bottom hr {
+  margin-bottom: 1em;
+}
+.box .bottom h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: 2rem;
+}
+.box .bottom ol {
+  padding: 1em;
+}
+.box .bottom ol li {
+  padding: 0.5em;
+}
+.box .bottom ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.box .pp {
+  padding: 1em 0;
+}
+.box .nutrition {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dwie kolumny: jedna dla nazw, druga dla wartości */
+  gap: 0.5em; /* Odstępy między wierszami */
+  align-items: center; /* Wyrównanie elementów w pionie */
+  width: 100%;
+  margin-top: 1em;
+  /* Stylowanie dla nazw i wartości */
+}
+.box .nutrition p {
+  padding: 0.8em;
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+.box .nutrition .macro {
+  text-align: left;
+  color: hsl(30, 10%, 34%); /* Przyciemniony kolor tekstu */
+  font-size: 1rem;
+}
+.box .nutrition .amount {
+  text-align: left;
+  color: hsl(14, 45%, 36%); /* Brązowy kolor */
+  font-weight: bold;
+  font-size: 1rem;
+}/*# sourceMappingURL=main.css.map */
